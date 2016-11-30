@@ -11,5 +11,5 @@ GROUP_ID=`ls -lahn $HOME_NAME | grep $USER_NAME | awk {'print $4'}`
 
 groupadd -g $GROUP_ID qgis
 useradd --shell /bin/bash --uid $USER_ID --gid $GROUP_ID $USER_NAME
-su $USER_NAME -c "/usr/bin/qgis"
+su $USER_NAME -c "/usr/bin/grass"
 
